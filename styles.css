@@ -1,0 +1,61 @@
+body{
+  background: radial-gradient(circle, #000000, #1a0000, #000000);
+  color:white;
+  font-family: 'Courier New', monospace;
+}
+
+header{
+  background: linear-gradient(135deg,#000,#8b0000);
+  box-shadow:0 0 30px red;
+}
+
+.parpadeo{
+  animation: parpadeo 1.5s infinite;
+}
+
+@keyframes parpadeo{
+  0%,100%{opacity:1;}
+  50%{opacity:0.4;}
+}
+
+/* TARJETAS */
+.card-terror{
+  background: rgba(0,0,0,0.8);
+  border:1px solid red;
+  border-radius:15px;
+  padding:20px;
+  margin-top:20px;
+  transition:0.4s;
+}
+
+.card-terror:hover{
+  transform:scale(1.03);
+  box-shadow:0 0 20px red;
+}
+
+/* SECCIONES SPA */
+.seccion{
+  display:none;
+}
+
+.activa{
+  display:block;
+}
+
+/* HISTORIAS */
+.historia{
+  background: rgba(0,0,0,0.9);
+  border-left:4px solid red;
+  padding:15px;
+  margin-top:15px;
+  border-radius:10px;
+}
+
+/* BOTON ARRIBA */
+#btnArriba{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display:none;
+  border-radius:50%;
+}
