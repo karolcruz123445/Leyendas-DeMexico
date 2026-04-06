@@ -1,4 +1,3 @@
-// ===== SPA =====
 function mostrarSeccion(id){
   document.querySelectorAll(".seccion").forEach(sec=>{
     sec.classList.remove("activa");
@@ -7,7 +6,6 @@ function mostrarSeccion(id){
   document.getElementById(id).classList.add("activa");
 }
 
-// ===== HISTORIAS =====
 let historias = [];
 
 const form = document.getElementById("formHistoria");
@@ -54,7 +52,6 @@ function editar(i){
   }
 }
 
-// ===== BOTON ARRIBA =====
 const btn = document.getElementById("btnArriba");
 
 window.onscroll = function(){
